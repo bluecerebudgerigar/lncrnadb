@@ -2,7 +2,7 @@ build : requirements.txt
 	
 	test `which pip` || easy_install pip
 	test `which virtualenv-2.7` || sudo pip install virtualenv
-	test -d venv || virtualenv-2.7 -p --system-site-packages venv
+	test -d venv || virtualenv-2.7 -p --system=site-packages venv
 	source venv/bin/activate; pip install -r requirements.txt
 	touch venv/bin/activate
 	
