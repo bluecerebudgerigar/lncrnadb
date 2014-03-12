@@ -21,6 +21,4 @@ django-tinymce==1.5.2
 djangocms-table==1.0.2
 gunicorn==18.0
 html5lib==1.0b3
-mysql-connector-python==1.0.12
-mysql-utilities==1.3.5
 simplejson==3.3.2
