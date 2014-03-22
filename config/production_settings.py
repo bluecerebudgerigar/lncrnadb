@@ -193,7 +193,7 @@ LOGGING = {
 
 
 
-HAYSTACK_SITECONF = 'simpleplug.search_sites'
+HAYSTACK_SITECONF = 'lncrnadb_deployment.search_sites'
 HAYSTACK_SEARCH_ENGINE = 'whoosh'
 HAYSTACK_WHOOSH_PATH= os.path.join(PROJECT_PATH, "whoosh_index")
 

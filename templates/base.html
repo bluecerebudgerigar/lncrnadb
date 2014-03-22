@@ -5,10 +5,10 @@
   <head>
       {% render_block "css" %}
       
-	  <script type="text/javascript" src="/static/jquery-1.9.1.js"></script>
-	  <script type="text/javascript" src="/static/jquery.cookie.js"></script>
-//	  <script type="text/javascript" src="/static/jquery.dajax.core.js"></script>
-	  
+	  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery/jquery-1.11.0.min.js"></script>
+	  <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-cookie/jquery.cookie.js"></script>
+	  <script type="text/javascript" src="{{ STATIC_URL }}dajax/jquery.dajax.core.js"></script>
+	 
 	  
       {% dajaxice_js_import %}
 	  
@@ -17,23 +17,23 @@
   </head>
   <body>
 	  {% addtoblock "css" %}
-	  <link href="/static/header.css" rel="stylesheet" type="text/css" />
-	  <link href="/static/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
+	  <link href="{{ STATIC_URL }}css/header.css" rel="stylesheet" type="text/css" />
+	  <link href="{{ STATIC_URL }}css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
 	  
 	  {% endaddtoblock %}
 
       {% cms_toolbar %}
 	  <div id="top_quek" class="header_quek">
 		  <div id="left" class="header_quek_cell">
-			  <img src="/static/images/lncrnadb_logo_32.png" alt="lncrna_logo" hspace="90">	
+			  <img src="{{ STATIC_URL }}images/lncrnadb_logo_32.png" alt="lncrna_logo" hspace="90">	
 		  </div>
 		  <div id="center" class="header_quek_cell">
-			  <img class="header_icon" src="/static/images/home_white.png">
-			  <img class="header_icon" src="/static/images/browse_white.png">
-			  <img class="header_icon" src="/static/images/submit_white.png">
-			  <img class="header_icon" src="/static/images/tools_icon_white.png">
-			  <img class="header_icon" src="/static/images/help_white.png">
-			  <img class="header_icon" src="/static/images/email_logo_white.png">
+			  <img class="header_icon" src="{{ STATIC_URL }}images/home_white.png">
+			  <img class="header_icon" src="{{ STATIC_URL }}images/browse_white.png">
+			  <img class="header_icon" src="{{ STATIC_URL }}images/submit_white.png">
+			  <img class="header_icon" src="{{ STATIC_URL }}images/tools_icon_white.png">
+			  <img class="header_icon" src="{{ STATIC_URL }}images/help_white.png">
+			  <img class="header_icon" src="{{ STATIC_URL }}images/email_logo_white.png">
 			  
 			       
 			  
