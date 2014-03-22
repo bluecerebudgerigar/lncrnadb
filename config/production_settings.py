@@ -267,27 +267,27 @@ TINYMCE_DEFAULT_CONFIG = {
 
 CMS_PLACEHOLDER_CONF = {
     
-    'nomenclature' : {
+    'NomenclaturePlugin' : {
         "plugins" : ['NomenclaturePlugin']
     },
-    'associatedcomp' : {
+    'AssociatedcompPlugin' : {
         "plugins" : ['AssociatedcompPlugin']
     },
     
-    'sequences' : {
+    'SequencesPlugin' : {
         "plugins" : ['SequencesPlugin']
     },
         
-    'expression': {
+    'ExpressionPlugin': {
         "plugins": ['ExpressionPlugin']
     },
-    'species' : {
+    'SpeciesPlugin' : {
         "plugins": ['SpeciesPlugin']
     },
-    'annotation': {
+    'AnnotationPlugin': {
         "plugins": ['AnnotationPlugin']
     },
-    'literature' : {
+    'LiteraturePlugin' : {
         "plugins": ['LiteraturePlugin']
     }
 }
