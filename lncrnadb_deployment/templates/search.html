@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load dajaxice_templatetags %}
+
+<a href="base.html" id="" title="base">base</a>
+{% load cms_tags %}
+{% block base_content %}
+<p>fuck a dog</p>
+<button onclick="Dajaxice.example.sayhello(my_js_callback);">
+{% block content %}
+{% addtoblock "js" %}
+<script type="text/javascript">
+function my_js_callback(data){
+    alert(data.message);
+}
+</script>
+{% endaddtoblock %}
+{% endblock %}
